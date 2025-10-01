@@ -17,13 +17,13 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 z-50 w-full">
             {/* Topbar */}
-            <div className={`${scrolled ? "bg-[#0B1F3A]/80 backdrop-blur-md border-b border-white/10" : "bg-[#0B1F3A]/80"} w-full text-white text-xs sm:text-sm flex flex-col sm:flex-row sm:justify-between items-center gap-1 sm:gap-0 px-4 sm:px-6 lg:px-10 xl:px-16 py-2 transition-colors duration-200`}>
+            <div className={`${scrolled ? "bg-[#0B1F3A]/80 backdrop-blur-md" : "bg-[#0B1F3A]/80"} w-full text-white text-xs sm:text-sm flex flex-col sm:flex-row sm:justify-between items-center gap-1 sm:gap-0 px-4 sm:px-6 lg:px-10 xl:px-16 py-2 transition-colors duration-200`}>
                 <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-[#F4B400]" /> Need Quick Response? Call US +1 (333) 000-0000</p>
                 <p>Monday - Friday / 8AM to 5PM</p>
             </div>
 
             {/* Navbar */}
-            <nav className={`${scrolled ? "bg-[#0B1F3A]/90 backdrop-blur-md border-b border-white/10" : "bg-[#0B1F3A]/90"} text-white shadow-sm transition-colors duration-200`}>
+            <nav className={`${scrolled ? "bg-[#0B1F3A]/80 backdrop-blur-md" : "bg-[#0B1F3A]/80"} text-white transition-colors duration-200`}>
                 <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10 xl:px-16 py-4  " >
                     {/* Logo */}
                     <div className="flex items-center gap-2">
