@@ -27,7 +27,7 @@ const Navbar = () => {
                 <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10 xl:px-16 py-4  " >
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-full bg-[#F4B400]"></div>
+                        <div className=" rounded-full"><img src="/public/sample.png" alt="logo" className="w-12 h-12 object-cover" /></div>
                         <span className="font-semibold text-lg">EduGlobe International</span>
                     </div>
 
