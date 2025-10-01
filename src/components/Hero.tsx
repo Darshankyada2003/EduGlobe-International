@@ -3,14 +3,14 @@ const Hero = () => {
     <section className="container bg-[#939393] text-white">
       <div className=" mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-16 text-center md:text-left ">
         {/* Top Line */}
-        <div className="flex flex-row gap-4 ">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="w-full">
             <p className="uppercase text-sm font-semibold mb-2">
               EduGlobe VISA SOLUTION
             </p>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-bold leading-snug mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4">
               Unlock Your Global Journey <br /> with EduGlobe Visa Solutions
             </h1>
 
@@ -24,12 +24,12 @@ const Hero = () => {
           </div>
 
           <div className="w-full">
-            <img src="../../public/map.png" className=" object-cover" alt="globe" />
+            <img src="/map.png" className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl object-contain mx-auto" alt="globe" />
           </div>
         </div>
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <button className="px-6 py-3 bg-[#555555] text-white rounded-md font-medium">
+          <button className="px-6 py-3 mt-10 md:mt-0 bg-[#555555] text-white rounded-md font-medium">
             Apply Now
           </button>
           <button className="px-6 py-3 bg-white text-gray-800 rounded-md hover:bg-gray-200 font-medium">
