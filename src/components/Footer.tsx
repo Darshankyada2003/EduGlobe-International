@@ -127,7 +127,7 @@ const Footer = () => {
 
             {/* Bottom Line */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 border-t border-white/10 mt-10 pt-4 text-center text-sm text-gray-400">
-                Copyright © {new Date().getFullYear()} <span className="text-white">EduGlobe International</span> | Designed by TokoTema
+                Copyright © {new Date().getFullYear()} <span className="text-white">EduGlobe International</span> | Designed by Dhruv Shah 
             </div>
         </footer>
     );

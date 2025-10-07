@@ -1,8 +1,11 @@
 import ServicesSection from "../components/ServicesSection";
 import CTASection from "../components/CTASection";
+import Testimonials from "../components/Testimonials";
+import { GraduationCap, Globe2, Handshake } from "lucide-react";
+import Seo from "../utils/Seo";
 
 const features = [
-    { title: "Why KCI?", desc: "Expert guidance, transparent process, proven success.", icon: "🎓" },
+    { title: "Why EduGlobe?", desc: "Expert guidance, transparent process, proven success.", icon: "🎓" },
     { title: "Global Network", desc: "Universities and partners across continents.", icon: "🌍" },
     { title: "End-to-End Support", desc: "From counseling to visa stamping.", icon: "🤝" },
 ];
@@ -13,6 +16,8 @@ const steps = [
     "Offer letters and scholarship guidance",
     "Visa documentation and interview prep",
     "Pre-departure briefing and housing help",
+    "Arrival assistance and university orientation",
+    "Career guidance and post-study support",
 ];
 
 const faqs = [
@@ -24,6 +29,7 @@ const faqs = [
 export default function Services() {
     return (
         <div>
+            <Seo title="Services — EduGlobe International" description="Explore our end‑to‑end services: counseling, applications, documentation, visa filing, mock interviews, and pre‑departure support." />
             {/* Hero */}
             <section className="relative overflow-hidden bg-cover bg-center pb-9">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
@@ -36,7 +42,7 @@ export default function Services() {
                             Dedicated counselors, streamlined applications, and stress‑free visa processing. Start your journey with confidence.
                         </p>
                         <div className="mt-6 flex flex-wrap gap-3">
-                            <a href="#contact" className="bg-[#F4B400] text-[#0B1F3A] px-5 py-3 rounded-md font-semibold hover:bg-[#e2a800]">Get Free Counseling</a>
+                            <a href="#contact" className="bg-gray-200 hover:bg-gray-300 text-[#0B1F3A] px-5 py-3 rounded-md font-semibold">Get Free Counseling</a>
                             <a href="#steps" className="px-5 py-3 rounded-md border border-[#0B1F3A]/20 text-[#0B1F3A] hover:bg-white">How it Works</a>
                         </div>
                     </div>
@@ -57,11 +63,25 @@ export default function Services() {
             <section className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-12 md:py-16 bg-[#0B1F3A]/80">
                 <h2 className="text-2xl md:text-3xl font-bold text-white text-center">Why choose us?</h2>
                 <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {features.map((f) => (
-                        <div key={f.title} className="p-6 rounded-lg border border-[#0B1F3A]/10 bg-white">
-                            <div className="text-3xl">{f.icon}</div>
-                            <h3 className="mt-3 font-semibold text-[#0B1F3A]">{f.title}</h3>
-                            <p className="text-[#0B1F3A]/80 mt-1">{f.desc}</p>
+                    {features.map((f, idx) => (
+                        <div
+                            key={f.title}
+                            className={`relative overflow-hidden p-6 rounded-2xl border border-white/10 bg-white/95 backdrop-blur shadow-sm hover:shadow-md transition-all ${idx === 1 ? 'md:translate-y-3' : ''} ${idx === 2 ? 'lg:-translate-y-2' : ''}`}
+                        >
+                            {/* Accent bar */}
+                            <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-cyan-400 to-blue-400"></div>
+                            {/* Soft blob */}
+                            <div className="pointer-events-none absolute -top-6 -right-6 h-24 w-24 rounded-full bg-cyan-500/10" />
+
+                            <div className="flex items-center gap-3 pl-3">
+                                <div className="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center text-cyan-500">
+                                    {idx === 0 && <GraduationCap className="h-5 w-5" />}
+                                    {idx === 1 && <Globe2 className="h-5 w-5" />}
+                                    {idx === 2 && <Handshake className="h-5 w-5" />}
+                                </div>
+                                <h3 className="font-semibold text-[#0B1F3A]">{f.title}</h3>
+                            </div>
+                            <p className="text-[#0B1F3A]/80 mt-3 pl-3">{f.desc}</p>
                         </div>
                     ))}
                 </div>
@@ -76,33 +96,21 @@ export default function Services() {
                     <h2 className="text-2xl md:text-3xl font-bold text-white text-center">7 Easy Steps to Land in your Dream University</h2>
                     <ol className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {steps.map((s, i) => (
-                            <li key={i} className="p-5 rounded-md bg-white border border-[#0B1F3A]/10">
-                                <span className="inline-block w-7 h-7 rounded-full bg-[#F4B400] text-[#0B1F3A] font-bold text-sm text-center leading-7 mr-3 align-middle">{i + 1}</span>
-                                <span className="align-middle text-[#0B1F3A]">{s}</span>
+                            <li key={i} className="relative rounded-xl bg-white/95 backdrop-blur border border-white/10 shadow-sm hover:shadow-md transition-shadow p-5">
+                                <div className="absolute -top-3 -left-3 w-8 h-8 rounded-md bg-cyan-500 text-white font-semibold text-sm flex items-center justify-center">
+                                    {i + 1}
+                                </div>
+                                <div className="pl-1">
+                                    <p className="text-[#0B1F3A]">{s}</p>
+                                </div>
                             </li>
                         ))}
                     </ol>
                 </div>
             </section>
 
-            {/* Testimonials-like cards */}
-            <section className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-12 md:py-16">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#0B1F3A] text-center">What our students say</h2>
-                <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {[1,2,3].map((i)=> (
-                        <div key={i} className="p-6 rounded-lg border border-[#0B1F3A]/10 bg-white">
-                            <p className="text-[#0B1F3A]/80">“Seamless process and helpful counselors. Got my visa in time!”</p>
-                            <div className="mt-4 flex items-center gap-3">
-                                <img src={`https://randomuser.me/api/portraits/${i % 2 ? "women" : "men"}/${20+i}.jpg`} alt="user" className="w-10 h-10 rounded-full object-cover" />
-                                <div>
-                                    <p className="text-sm font-semibold text-[#0B1F3A]">Student {i}</p>
-                                    <p className="text-xs text-[#0B1F3A]/60">Masters Applicant</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+            {/* Testimonials */}
+            <Testimonials />
 
             {/* Blog/Updates */}
             <section className="">

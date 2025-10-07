@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowUp, ArrowRight, CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
 const VisionSection = () => {
     const [openIndex, setOpenIndex] = useState<number>(0);
     const toggle = (index: number) => {
@@ -9,16 +10,28 @@ const VisionSection = () => {
         <section className=" mt-10 bg-gradient-to-b from-white to-[#F7F8FB] relative">
             <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 pt-10 md:pt-28 lg:pt-36 pb-16 md:pb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-start">
                 <div className="md:mt-6">
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#0B1F3A] leading-tight mb-4">
+                    <motion.h2
+                        initial={{ y: 12, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        className="text-4xl md:text-5xl font-bold text-[#0B1F3A] leading-tight mb-4"
+                    >
                         Vision & Values That Power
                         <br /> EduGlobe
-                    </h2>
+                    </motion.h2>
 
-                    <p className="text-gray-600 mb-6 max-w-2xl">
+                    <motion.p
+                        initial={{ y: 10, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+                        className="text-gray-600 mb-6 max-w-2xl"
+                    >
                         We exist to make global education accessible. By combining ethical guidance with
                         country‑specific expertise, we help students choose the right program, build strong
                         applications, and secure visas with confidence.
-                    </p>
+                    </motion.p>
 
                     {/* Quick highlights */}
                     <ul className="grid sm:grid-cols-2 gap-4 mb-6">
@@ -102,7 +115,11 @@ const VisionSection = () => {
                 </div>
 
                 <div className="relative w-full h-64 sm:h-80 md:h-[420px] lg:h-[520px] md:mt-6">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0, scale: 1.02 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         src="/Unveiling.jpg"
                         alt="Unveiling the Vision and Values of EduGlobe"
                         className="absolute inset-0 h-full w-full object-cover rounded-xl shadow-xl ring-1 ring-black/5"

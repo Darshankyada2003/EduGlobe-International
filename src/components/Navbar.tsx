@@ -34,7 +34,7 @@ const Navbar = () => {
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex gap-6 text-sm font-medium">
                         <li><Link to="/" className="hover:text-[#4596ff]">Home</Link></li>
-                        <li><Link to="/about" className="hover:text-[#4596ff]">Study Destinations</Link></li>
+                        <li><Link to="/study-destinations" className="hover:text-[#4596ff]">Study Destinations</Link></li>
                         <li><Link to="/services" className="hover:text-[#4596ff]">Services</Link></li>
                         <li><Link to="/page" className="hover:text-[#4596ff]">Company</Link></li>
                         <li><Link to="/contact" className="hover:text-[#4596ff]">Contact Us</Link></li>
@@ -63,7 +63,7 @@ const Navbar = () => {
                     <div className="md:hidden border-t border-white/20">
                         <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-3 flex flex-col gap-3">
                             <Link to="/" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Home</Link>
-                            <Link to="/about" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Study Destinations</Link>
+                            <Link to="/study-destinations" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Study Destinations</Link>
                             <Link to="/services" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Services</Link>
                             <Link to="/page" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Company</Link>
                             <Link to="/contact" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Contact Us</Link>

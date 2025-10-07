@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@layer base {
+  html { @apply scroll-smooth; }
+
+  body {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    @apply text-[#0B1F3A]/80 bg-white antialiased;
+  }
+
+  h1 { @apply text-[#0B1F3A] font-extrabold tracking-tight leading-tight text-3xl sm:text-4xl md:text-5xl; }
+  h2 { @apply text-[#0B1F3A] font-bold tracking-tight leading-tight text-2xl sm:text-3xl md:text-4xl; }
+  h3 { @apply text-[#0B1F3A] font-semibold leading-snug text-xl md:text-2xl; }
+  p { @apply leading-7; }
+
+  a { @apply transition-colors; }
+}
+
+/* Reusable typography & UI helpers */
+@layer components {
+  .eyebrow { @apply uppercase text-xs tracking-wide text-[#0B1F3A]/70 font-semibold; }
+
+  .heading-hero { @apply text-[#0B1F3A] font-extrabold tracking-tight leading-tight text-3xl sm:text-4xl md:text-5xl; }
+  .heading-1 { @apply text-[#0B1F3A] font-bold tracking-tight leading-tight text-3xl md:text-4xl; }
+  .heading-2 { @apply text-[#0B1F3A] font-semibold leading-snug text-2xl md:text-3xl; }
+  .subheading { @apply text-[#0B1F3A]/80 text-sm md:text-base; }
+
+  .btn-primary { @apply inline-flex items-center gap-2 bg-[#0B1F3A] text-white px-5 py-3 rounded-md font-semibold hover:opacity-95; }
+  .btn-outline { @apply inline-flex items-center gap-2 px-5 py-3 rounded-md border border-[#0B1F3A]/20 text-[#0B1F3A] bg-white hover:bg-gray-50; }
+
+  .card { @apply rounded-xl border border-[#0B1F3A]/10 bg-white; }
+  .elev-1 { @apply shadow-sm; }
+  .elev-2 { @apply shadow; }
+  .elev-3 { @apply shadow-lg; }
+}

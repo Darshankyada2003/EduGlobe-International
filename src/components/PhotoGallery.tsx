@@ -7,7 +7,7 @@ const PhotoGallery: React.FC = () => {
                 {/* Header row */}
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-8">
                     <div>
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-3">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-3">
                             EduGlobe's Photo Gallery
                         </h2>
                         <p className="max-w-3xl">

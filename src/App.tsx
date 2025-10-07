@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 // import About from "./pages/About";
 import Services from "./pages/Services";
+import StudyDestination from "./pages/StudyDestination";
+import CountryDetail from "./pages/CountryDetail";
 // import Contact from "./pages/Contact";
 // import Gallery from "./pages/Gallery";
 
@@ -18,6 +20,8 @@ function App() {
             <Route path="/" element={<Home />} />
             {/* <Route path="/about" element={<About />} /> */}
             <Route path="/services" element={<Services />} />
+            <Route path="/study-destinations" element={<StudyDestination />} />
+            <Route path="/study-destinations/:slug" element={<CountryDetail />} />
             {/* <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} /> */}
           </Routes>

@@ -1,8 +1,13 @@
 import { User, Settings, ThumbsUp } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 const Hero = () => {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const overlayY = useTransform(scrollYProgress, [0, 1], [0, -60]);
   return (
-    <section className="relative w-full bg-[url('/Globe.jpg')] bg-cover bg-center text-white">
-      <div className="absolute inset-0 bg-[#0B1F3A]/80" aria-hidden="true"></div>
+    <section ref={ref} className="relative w-full bg-[url('/Globe.jpg')] bg-cover bg-center text-white">
+      <motion.div style={{ y: overlayY }} className="absolute inset-0 bg-[#0B1F3A]/80" aria-hidden="true"></motion.div>
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-16 text-center md:text-left ">
         {/* Top Line */}
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
@@ -12,16 +17,28 @@ const Hero = () => {
             </p>
 
             {/* Title */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4">
+            <motion.h1
+              initial={{ y: 12, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug mb-4 text-white "
+            >
               Unlock Your Global Journey <br /> with EduGlobe Visa Solutions
-            </h1>
+            </motion.h1>
 
             {/* Subtitle */}
-            <p className="text-gray-200 mb-8 max-w-xl">
+            <motion.p
+              initial={{ y: 10, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+              className="text-gray-200 mb-8 max-w-xl"
+            >
               Expert counseling for study visas and admissions across the US, UK,
               Canada, Australia and more. From shortlisting to visa interviews,
               we make your global journey simple and stress‑free.
-            </p>
+            </motion.p>
           </div>
 
           <div className="w-full">

@@ -14,7 +14,7 @@ const ServicesSection = () => {
     <section className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-5  bg-[#0B1F3A]/80 text-white">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <p className="uppercase text-xs tracking-wide  font-semibold mb-2">Our Service</p>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold  leading-snug">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold  text-white leading-snug">
           Our Comprehensive Visa and
           <br className="hidden sm:block" /> Immigration Solutions
         </h2>

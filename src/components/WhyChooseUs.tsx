@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { CheckCircle2, ShieldCheck, Clock3, Globe2 } from "lucide-react";
 
 const WhyChooseUs: React.FC = () => {
@@ -7,17 +8,17 @@ const WhyChooseUs: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
                 {/* Left visual */}
                 <div className="relative">
-                    <div className="w-full h-64 sm:h-80 md:h-[420px] lg:h-[520px] rounded-xl overflow-hidden shadow-xl ring-1 ring-black/5">
+                    <motion.div initial={{ scale: 1.02, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease: "easeOut" }} className="w-full h-64 sm:h-80 md:h-[420px] lg:h-[520px] rounded-xl overflow-hidden shadow-xl ring-1 ring-black/5">
                         <img src="/whychoosee.jpg" alt="Students abroad with guidance" className="w-full h-full object-cover" />
-                    </div>
+                    </motion.div>
                     {/* Floating card */}
-                    <div className="hidden sm:flex items-center gap-3 absolute -bottom-6 left-4 bg-white/80 backdrop-blur-md rounded-lg shadow-lg px-4 py-3 ring-1 ring-black/10">
+                    <motion.div initial={{ y: 16, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }} className="hidden sm:flex items-center gap-3 absolute -bottom-6 left-4 bg-white/80 backdrop-blur-md rounded-lg shadow-lg px-4 py-3 ring-1 ring-black/10">
                         <ShieldCheck className="w-6 h-6 text-[#0B1F3A]" />
                         <div>
                             <p className="text-sm font-semibold">Visa Success Focus</p>
                             <p className="text-xs text-gray-600">Strong documentation & interview prep</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Right content */}
