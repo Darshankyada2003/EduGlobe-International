@@ -8,7 +8,7 @@ const PhotoGallery: React.FC = () => {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-8">
                     <div>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1F3A] leading-tight mb-3">
-                            ImmiGo's Photo Gallery
+                            EduGlobe's Photo Gallery
                         </h2>
                         <p className="text-gray-600 max-w-3xl">
                             At nullam leo consectetur euismod enim. Orci donec sapien et semper
@@ -25,9 +25,9 @@ const PhotoGallery: React.FC = () => {
 
                 {/* Thumbnails */}
                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" />
-                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" />
-                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" />
+                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/public/student1.jpg" alt="" className="w-full h-full object-cover" /></div>
+                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/public/student2.jpg" alt="" className="w-full h-full object-cover" /></div>
+                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/public/student3.jpg" alt="" className="w-full h-full object-cover" /></div>
                 </div>
             </div>
         </section>

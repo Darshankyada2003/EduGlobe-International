@@ -18,7 +18,7 @@ const Navbar = () => {
         <header className="sticky top-0 z-50 w-full">
             {/* Topbar */}
             <div className={`${scrolled ? "bg-[#0B1F3A]/80 backdrop-blur-md" : "bg-[#0B1F3A]/80"} w-full text-white text-xs sm:text-sm flex flex-col sm:flex-row sm:justify-between items-center gap-1 sm:gap-0 px-4 sm:px-6 lg:px-10 xl:px-16 py-2 transition-colors duration-200`}>
-                <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-[#F4B400]" /> Need Quick Response? Call US +1 (333) 000-0000</p>
+                <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-cyan-400" /> Need Quick Response? Call India +91 70418 30038</p>
                 <p>Monday - Friday / 8AM to 5PM</p>
             </div>
 
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10 xl:px-16 py-4  " >
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <div className=" rounded-full"><img src="/sample.png" alt="logo" className="w-12 h-12 object-cover" /></div>
+                        <div className=" rounded-full"><img src="/public/sample.png" alt="logo" className="w-14 h-12 object-cover" /></div>
                         <span className="font-semibold text-lg">EduGlobe International</span>
                     </div>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
                     {/* Desktop CTA */}
                     <Link
                         to="/get-started"
-                        className="hidden md:inline-block bg-[#F4B400] text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow hover:bg-[#e2a800]"
+                        className="hidden md:inline-block bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow hover:from-cyan-300 hover:to-blue-400"
                     >
                         Book Online Conselling
                     </Link>
@@ -62,14 +62,14 @@ const Navbar = () => {
                 {isOpen && (
                     <div className="md:hidden border-t border-white/20">
                         <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-3 flex flex-col gap-3">
-                            <Link to="/" className="py-2 hover:text-[#F4B400]" onClick={() => setIsOpen(false)}>Home</Link>
-                            <Link to="/about" className="py-2 hover:text-[#F4B400]" onClick={() => setIsOpen(false)}>Study Destinations</Link>
-                            <Link to="/services" className="py-2 hover:text-[#F4B400]" onClick={() => setIsOpen(false)}>Services</Link>
-                            <Link to="/page" className="py-2 hover:text-[#F4B400]" onClick={() => setIsOpen(false)}>Company</Link>
-                            <Link to="/contact" className="py-2 hover:text-[#F4B400]" onClick={() => setIsOpen(false)}>Contact Us</Link>
+                            <Link to="/" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Home</Link>
+                            <Link to="/about" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Study Destinations</Link>
+                            <Link to="/services" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Services</Link>
+                            <Link to="/page" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Company</Link>
+                            <Link to="/contact" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Contact Us</Link>
                             <Link
                                 to="/get-started"
-                                className="mt-2 bg-[#F4B400] text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow hover:bg-[#e2a800] text-center"
+                                className="mt-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow hover:from-cyan-300 hover:to-blue-400 text-center"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Get Started
