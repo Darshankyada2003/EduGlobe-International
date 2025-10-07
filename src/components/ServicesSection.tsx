@@ -1,12 +1,12 @@
 import { ArrowRight } from "lucide-react";
 
 const services = [
-  { title: "Student Visa" },
-  { title: "Visa Consultation" },
-  { title: "Document Preparation" },
-  { title: "Visa Application" },
-  { title: "Employment Visa" },
-  { title: "Tourist Visa" },
+  { title: "Student Visa", image: "/StudentVisa.jpg" },
+  { title: "Visa Consultation", image: "/VisaConsultation.jpg"   },
+  { title: "Document Preparation", image: "/DocumentPreparation.jpg" },
+  { title: "Visa Application", image: "/VisaApplication.jpg" }, 
+  { title: "Employment Visa", image: "/EmploymentVisa.jpg" },
+  { title: "Tourist Visa", image: "/TouristVisa.jpg" },
 ];
 
 const ServicesSection = () => {

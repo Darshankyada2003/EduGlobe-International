@@ -1,9 +1,9 @@
 import { User, Settings, ThumbsUp } from "lucide-react";
 const Hero = () => {
   return (
-    <section className="container relative bg-[url('/Globe.jpg')] bg-cover bg-center text-white">
+    <section className="relative w-full bg-[url('/Globe.jpg')] bg-cover bg-center text-white">
       <div className="absolute inset-0 bg-[#0B1F3A]/80" aria-hidden="true"></div>
-      <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-16 text-center md:text-left ">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-16 text-center md:text-left ">
         {/* Top Line */}
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="w-full">

@@ -46,7 +46,15 @@ const VisionSection = () => {
                     </div>
                 </div>
 
-                <div className="w-full h-64 sm:h-80 md:h-[420px] lg:h-[520px] bg-[#0B1F3A]/10 md:mt-10 border border-[#0B1F3A]/20"></div>
+                <div className="relative w-full h-64 sm:h-80 md:h-[420px] lg:h-[520px] md:mt-10">
+                    <img
+                        src="/Unveiling.jpg"
+                        alt="Unveiling the Vision and Values of EduGlobe"
+                        className="absolute inset-0 h-full w-full object-cover rounded-md"
+                        loading="lazy"
+                    />
+                    <div className="absolute inset-0 rounded-md ring-1 ring-[#0B1F3A]/20"></div>
+                </div>
             </div>
         </section>
     );
