@@ -18,7 +18,7 @@ const Navbar = () => {
         <header className="sticky top-0 z-50 w-full">
             {/* Topbar */}
             <div className={`${scrolled ? "bg-[#0B1F3A]/80 backdrop-blur-md" : "bg-[#0B1F3A]/80"} w-full text-white text-xs sm:text-sm flex flex-col sm:flex-row sm:justify-between items-center gap-1 sm:gap-0 px-4 sm:px-6 lg:px-10 xl:px-16 py-2 transition-colors duration-200`}>
-                <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-cyan-400" /> Need Quick Response? Call India +91 70418 30038</p>
+                <p className="flex items-center gap-2"><Phone className="w-4 h-4 text-white" /> Need Quick Response? Call India +91 70418 30038</p>
                 <p>Monday - Friday / 8AM to 5PM</p>
             </div>
 
@@ -27,23 +27,23 @@ const Navbar = () => {
                 <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10 xl:px-16 py-4  " >
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <div className=" rounded-full"><img src="/public/sample.png" alt="logo" className="w-14 h-12 object-cover" /></div>
+                        <div className=" rounded-full"><img src="/sample.png" alt="logo" className="w-14 h-12 object-cover" /></div>
                         <span className="font-semibold text-lg">EduGlobe International</span>
                     </div>
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex gap-6 text-sm font-medium">
-                        <li><Link to="/" className="hover:text-[#F4B400]">Home</Link></li>
-                        <li><Link to="/about" className="hover:text-[#F4B400]">Study Destinations</Link></li>
-                        <li><Link to="/services" className="hover:text-[#F4B400]">Services</Link></li>
-                        <li><Link to="/page" className="hover:text-[#F4B400]">Company</Link></li>
-                        <li><Link to="/contact" className="hover:text-[#F4B400]">Contact Us</Link></li>
+                        <li><Link to="/" className="hover:text-[#4596ff]">Home</Link></li>
+                        <li><Link to="/about" className="hover:text-[#4596ff]">Study Destinations</Link></li>
+                        <li><Link to="/services" className="hover:text-[#4596ff]">Services</Link></li>
+                        <li><Link to="/page" className="hover:text-[#4596ff]">Company</Link></li>
+                        <li><Link to="/contact" className="hover:text-[#4596ff]">Contact Us</Link></li>
                     </ul>
 
                     {/* Desktop CTA */}
                     <Link
                         to="/get-started"
-                        className="hidden md:inline-block bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow hover:from-cyan-300 hover:to-blue-400"
+                        className="hidden md:inline-block bg-gray-200 hover:bg-gray-300 text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow"
                     >
                         Book Online Conselling
                     </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
                             <Link to="/contact" className="py-2 hover:text-cyan-400" onClick={() => setIsOpen(false)}>Contact Us</Link>
                             <Link
                                 to="/get-started"
-                                className="mt-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow hover:from-cyan-300 hover:to-blue-400 text-center"
+                                className="mt-2 bg-gray-200 hover:bg-gray-300 text-[#0B1F3A] px-4 py-2 rounded-md font-medium shadow text-center"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Get Started

@@ -18,7 +18,7 @@ const Testimonials: React.FC = () => {
                 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     {/* Card 1 */}
                     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 hover:shadow-md transition-shadow">
-                        <Quote className="w-6 h-6 text-cyan-400" />
+                        <Quote className="w-6 h-6 text-cyan-500" />
                         <p className="text-gray-700 mt-3">
                             EduGlobe helped me shortlist universities and refine my SOP. The process felt
                             simple and transparent, and I received admits from two top choices.
@@ -36,7 +36,7 @@ const Testimonials: React.FC = () => {
 
                     {/* Card 2 */}
                     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 hover:shadow-md transition-shadow">
-                        <Quote className="w-6 h-6 text-cyan-400" />
+                        <Quote className="w-6 h-6 text-cyan-500" />
                         <p className="text-gray-700 mt-3">
                             Great guidance for my Canadian study visa—clear timelines and mock interviews
                             boosted my confidence. My visa was approved without any hassle.
@@ -54,7 +54,7 @@ const Testimonials: React.FC = () => {
 
                     {/* Card 3 */}
                     <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 hover:shadow-md transition-shadow">
-                        <Quote className="w-6 h-6 text-cyan-400" />
+                        <Quote className="w-6 h-6 text-cyan-500" />
                         <p className="text-gray-700 mt-3">
                             From shortlisting to visa filing, the team supported me at every step. The
                             communication was timely, and the documentation checklist was spot on.

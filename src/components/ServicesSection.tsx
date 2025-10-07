@@ -11,14 +11,14 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-5">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-5  bg-[#0B1F3A]/80 text-white">
       <div className="text-center max-w-3xl mx-auto mb-10">
-        <p className="uppercase text-xs tracking-wide text-[#0B1F3A]/70 font-semibold mb-2">Our Service</p>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B1F3A] leading-snug">
+        <p className="uppercase text-xs tracking-wide  font-semibold mb-2">Our Service</p>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold  leading-snug">
           Our Comprehensive Visa and
           <br className="hidden sm:block" /> Immigration Solutions
         </h2>
-        <p className="text-sm text-[#0B1F3A]/80 mt-4">
+        <p className="text-sm  mt-4">
           End‑to‑end guidance covering course selection, university applications,
           documentation, visa filing, and mock interviews—all tailored to your destination.
         </p>
@@ -35,7 +35,7 @@ const ServicesSection = () => {
               <span className="text-sm font-medium text-[#0B1F3A] bg-white/90 px-3 py-1 rounded-sm shadow-sm">
                 {service.title}
               </span>
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#0B1F3A] shadow-sm group-hover:bg-cyan-400 group-hover:text-[#0B1F3A] transition-colors">
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#0B1F3A] shadow-sm group-hover:bg-cyan-500 group-hover:text-[#0B1F3A] transition-colors">
                 <ArrowRight className="h-4 w-4" />
               </span>
             </div>

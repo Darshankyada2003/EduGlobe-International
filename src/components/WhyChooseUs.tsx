@@ -36,28 +36,28 @@ const WhyChooseUs: React.FC = () => {
                     {/* Feature bullets */}
                     <ul className="grid sm:grid-cols-2 gap-4 mb-10">
                         <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <div>
                                 <p className="font-semibold">End-to-end counseling</p>
                                 <p className="text-sm text-gray-600">Course, university, SOP, LOR, and visa.</p>
                             </div>
                         </li>
                         <li className="flex items-start gap-3">
-                            <Globe2 className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <Globe2 className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <div>
                                 <p className="font-semibold">Country-specific expertise</p>
                                 <p className="text-sm text-gray-600">USA, UK, Canada, Australia, and more.</p>
                             </div>
                         </li>
                         <li className="flex items-start gap-3">
-                            <ShieldCheck className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <ShieldCheck className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <div>
                                 <p className="font-semibold">Strong visa strategy</p>
                                 <p className="text-sm text-gray-600">Documentation and mock interview support.</p>
                             </div>
                         </li>
                         <li className="flex items-start gap-3">
-                            <Clock3 className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <Clock3 className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <div>
                                 <p className="font-semibold">Fast, reliable timelines</p>
                                 <p className="text-sm text-gray-600">Clear milestones and proactive updates.</p>
@@ -82,7 +82,7 @@ const WhyChooseUs: React.FC = () => {
                                 <span className="text-[#0B1F3A]/70">90%</span>
                             </div>
                             <div className="h-2.5 bg-gray-200 rounded-full overflow-hidden">
-                                <div className="h-full w-[90%] bg-cyan-400 rounded-full" />
+                                <div className="h-full w-[90%] bg-cyan-500 rounded-full" />
                             </div>
                         </div>
                     </div>

@@ -23,19 +23,19 @@ const VisionSection = () => {
                     {/* Quick highlights */}
                     <ul className="grid sm:grid-cols-2 gap-4 mb-6">
                         <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <span className="text-[#0B1F3A]">Transparent, student‑first guidance</span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <span className="text-[#0B1F3A]">End‑to‑end support: course to visa</span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <span className="text-[#0B1F3A]">Country expertise: US, UK, CA, AU & more</span>
                         </li>
                         <li className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-400" />
+                            <CheckCircle2 className="w-5 h-5 mt-0.5 text-cyan-500" />
                             <span className="text-[#0B1F3A]">Proactive timelines and clear milestones</span>
                         </li>
                     </ul>
@@ -93,7 +93,7 @@ const VisionSection = () => {
 
                     {/* CTAs */}
                     <div className="flex flex-col sm:flex-row gap-3 mt-8">
-                        <a href="#contact" className="inline-block bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0B1F3A] px-5 py-3 rounded-md font-medium hover:from-cyan-300 hover:to-blue-400 text-center">Book Free Counseling</a>
+                        <a href="#contact" className="inline-block bg-gray-200 hover:bg-gray-300 text-[#0B1F3A] px-5 py-3 rounded-md font-medium text-center">Book Free Counseling</a>
                         <a href="#services" className="inline-block bg-white text-[#0B1F3A] px-5 py-3 rounded-md font-medium border border-[#0B1F3A]/20 hover:bg-gray-50 text-center">Explore Services</a>
                     </div>
 

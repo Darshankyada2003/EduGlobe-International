@@ -15,7 +15,7 @@ const CTASection: React.FC = () => {
                     Get a personalized roadmap for your study abroad plan in minutes.
                 </p>
                 <div>
-                    <button className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-md bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-[#0B1F3A] font-semibold">
+                    <button className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-md bg-gray-200 hover:bg-gray-300 text-[#0B1F3A] font-semibold">
                         Get Started Now
                     </button>
                 </div>

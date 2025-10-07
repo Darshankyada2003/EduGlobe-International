@@ -9,15 +9,15 @@ const Footer = () => {
                 <div>
                     <div className="flex items-center gap-2 mb-4">
                         <div className="w-14 h-12 rounded-full flex items-center justify-center text-[#0B1F3A]">
-                            <img src="/public/sample.png" alt="logo" className="w-full h-full object-cover" />
+                            <img src="/sample.png" alt="logo" className="w-full h-full object-cover" />
                         </div>
                         <span className="text-2xl font-semibold text-white">EduGlobe International</span>
                     </div>
                     <p className="text-sm text-gray-400 mb-3">
                         Ahemdabad , Gujrat , India
                     </p>
-                    <p className="text-sm mb-1 flex items-center gap-2"><CalendarDays className="w-4 h-4 text-cyan-400" /> Monday - Friday / 8AM to 5PM</p>
-                    <p className="text-sm mb-4 flex items-center gap-2"><PhoneIcon className="w-4 h-4 text-cyan-400" /> +91 70418 30038</p>
+                    <p className="text-sm mb-1 flex items-center gap-2"><CalendarDays className="w-4 h-4 text-white" /> Monday - Friday / 8AM to 5PM</p>
+                    <p className="text-sm mb-4 flex items-center gap-2"><PhoneIcon className="w-4 h-4 text-white" /> +91 70418 30038</p>
 
                     {/* Social Icons */}
                     <div className="flex flex-wrap gap-4 text-gray-300">

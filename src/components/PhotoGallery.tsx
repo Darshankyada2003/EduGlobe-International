@@ -2,22 +2,22 @@ import React from "react";
 
 const PhotoGallery: React.FC = () => {
     return (
-        <section className="bg-white">
+        <section className=" bg-[#0B1F3A]/80 text-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 py-14 md:py-16">
                 {/* Header row */}
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-8">
                     <div>
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B1F3A] leading-tight mb-3">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-3">
                             EduGlobe's Photo Gallery
                         </h2>
-                        <p className="text-gray-600 max-w-3xl">
+                        <p className="max-w-3xl">
                             Moments from visa approvals, university acceptances, and student send‑offs.
                             Explore how EduGlobe supports learners from counseling to takeoff.
                         </p>
                     </div>
 
                     <div className="md:pt-2">
-                        <button className="inline-block rounded-md bg-[#505153] text-white px-5 py-3 text-sm font-semibold hover:bg-[#434447] transition-colors">
+                        <button className="inline-block rounded-md bg-[#ffffff] text-[#0B1F3A]/80 px-5 py-3 text-sm font-semibold hover:bg-[#434447] transition-colors">
                             See All Gallery
                         </button>
                     </div>

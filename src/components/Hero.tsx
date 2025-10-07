@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
         {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-           <button className="px-6 py-3 mt-10 md:mt-0 bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0B1F3A] rounded-md font-medium hover:from-cyan-300 hover:to-blue-400">
+           <button className="px-6 py-3 mt-10 md:mt-0 bg-gray-200 hover:bg-gray-300 text-[#0B1F3A] rounded-md font-medium">
             Apply Now
           </button>
            <button className="px-6 py-3 bg-white text-[#0B1F3A] rounded-md hover:bg-gray-200 font-medium">
@@ -53,7 +53,7 @@ const Hero = () => {
 
         {/* Card 2 (Dark background) */}
         <div className="bg-[#0B1F3A] text-white p-8 md:p-10 flex flex-col items-center shadow-lg">
-          <Settings className="w-8 h-8 mb-4 text-cyan-400" />
+          <Settings className="w-8 h-8 mb-4 text-white" />
           <h3 className="font-semibold text-lg mb-2">Tailored Solutions</h3>
           <p className="text-gray-200 text-sm">
             Personalized university lists, SOP/LOR reviews, and strong visa
