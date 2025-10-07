@@ -1,10 +1,10 @@
-import { Facebook, Twitter, Linkedin, Instagram, CalendarDays, Phone as PhoneIcon } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, CalendarDays, Phone as PhoneIcon, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer className="bg-[#0B1F3A] text-gray-300 py-12">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-10 xl:px-16 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12">
                 {/* Logo & Info */}
                 <div>
                     <div className="flex items-center gap-2 mb-4">
@@ -29,35 +29,98 @@ const Footer = () => {
                 </div>
 
                 {/* Navigation */}
-                <div>
-                    <h3 className="text-white font-semibold mb-4">Navigation</h3>
+                <div className="md:border-l md:border-white/10 md:pl-8">
+                    <h3 className="text-white font-semibold mb-3">Navigation</h3>
+                    <div className="h-0.5 w-10 bg-cyan-400/80 mb-4"></div>
                     <ul className="space-y-2 text-sm">
-                        <li><Link to="/" className="hover:text-cyan-400">Home</Link></li>
-                        <li><Link to="/about" className="hover:text-cyan-400">About Us</Link></li>
-                        <li><Link to="/services" className="hover:text-cyan-400">Our Services</Link></li>
-                        <li><Link to="/team" className="hover:text-cyan-400">Our Team</Link></li>
+                        <li>
+                            <Link to="/" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Home</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/about" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>About Us</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/services" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Our Services</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/team" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Our Team</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
                 {/* Services */}
-                <div>
-                    <h3 className="text-white font-semibold mb-4">Services</h3>
+                <div className="md:border-l md:border-white/10 md:pl-8">
+                    <h3 className="text-white font-semibold mb-3">Services</h3>
+                    <div className="h-0.5 w-10 bg-cyan-400/80 mb-4"></div>
                     <ul className="space-y-2 text-sm">
-                        <li><Link to="/student-visa" className="hover:text-cyan-400">Student Visa</Link></li>
-                        <li><Link to="/visa-consultation" className="hover:text-cyan-400">Visa Consultation</Link></li>
-                        <li><Link to="/document-prep" className="hover:text-cyan-400">Document Preparation</Link></li>
-                        <li><Link to="/visa-application" className="hover:text-cyan-400">Visa Application</Link></li>
+                        <li>
+                            <Link to="/student-visa" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Student Visa</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/visa-consultation" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Visa Consultation</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/document-prep" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Document Preparation</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/visa-application" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Visa Application</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
                 {/* Help */}
-                <div>
-                    <h3 className="text-white font-semibold mb-4">Help</h3>
+                <div className="md:border-l md:border-white/10 md:pl-8">
+                    <h3 className="text-white font-semibold mb-3">Help</h3>
+                    <div className="h-0.5 w-10 bg-cyan-400/80 mb-4"></div>
                     <ul className="space-y-2 text-sm">
-                        <li><Link to="/support" className="hover:text-cyan-400">Customer Support</Link></li>
-                        <li><Link to="/how-it-works" className="hover:text-cyan-400">How It Works</Link></li>
-                        <li><Link to="/terms" className="hover:text-cyan-400">Terms & Condition</Link></li>
-                        <li><Link to="/privacy" className="hover:text-cyan-400">Privacy Policy</Link></li>
+                        <li>
+                            <Link to="/support" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Customer Support</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/how-it-works" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>How It Works</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/terms" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Terms & Condition</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/privacy" className="group inline-flex items-center gap-2 hover:text-cyan-400">
+                                <ChevronRight className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
+                                <span>Privacy Policy</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

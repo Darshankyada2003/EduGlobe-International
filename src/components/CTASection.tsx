@@ -11,8 +11,8 @@ const CTASection: React.FC = () => {
                     Your Immigration Goals
                 </h2>
                 <p className="text-gray-100/90 max-w-4xl mx-auto mb-10">
-                    Posuere sed eu proin elementum nulla. Sed non blandit auctor consequat sit orci sem.
-                    Ultrices adipiscing dictumst purus convallis convallis imperdiet
+                    Talk to an expert counselor about programs, admissions timelines, and visa strategy.
+                    Get a personalized roadmap for your study abroad plan in minutes.
                 </p>
                 <div>
                     <button className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-md bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-[#0B1F3A] font-semibold">

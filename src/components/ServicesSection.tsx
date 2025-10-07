@@ -18,9 +18,9 @@ const ServicesSection = () => {
           Our Comprehensive Visa and
           <br className="hidden sm:block" /> Immigration Solutions
         </h2>
-        <p className="text-sm text-[#0B1F3A] /80 mt-4">
-          Posuere sed eu proin elementum nulla. Sed non blandit auctor consequat sit orci sem.
-          Ultrices adipiscing dictumst purus convallis.
+        <p className="text-sm text-[#0B1F3A]/80 mt-4">
+          End‑to‑end guidance covering course selection, university applications,
+          documentation, visa filing, and mock interviews—all tailored to your destination.
         </p>
       </div>
 

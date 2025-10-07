@@ -18,10 +18,9 @@ const Hero = () => {
 
             {/* Subtitle */}
             <p className="text-gray-200 mb-8 max-w-xl">
-              Posuere sed eu proin elementum nulla. Sed non blandit auctor
-              consequat sit orci sem. Ultrices adipiscing dictumst purus
-              convallis. Convallis imperdiet risus turpis turpis molestie erat
-              viverra. Amet turpis nunc facilisis turpis dui cras nunc.
+              Expert counseling for study visas and admissions across the US, UK,
+              Canada, Australia and more. From shortlisting to visa interviews,
+              we make your global journey simple and stress‑free.
             </p>
           </div>
 
@@ -47,8 +46,8 @@ const Hero = () => {
           <User className="w-8 h-8 mb-4 text-[#0B1F3A]" />
           <h3 className="font-semibold text-lg mb-2">Expert Guidance</h3>
           <p className="text-gray-600 text-sm">
-            Posuere sed eu proin elementum nulla. Sed non blandit auctor
-            consequat sit orci sem.
+            Dedicated counselors help you choose the right country, course,
+            and intake based on your profile and goals.
           </p>
         </div>
 
@@ -57,8 +56,8 @@ const Hero = () => {
           <Settings className="w-8 h-8 mb-4 text-cyan-400" />
           <h3 className="font-semibold text-lg mb-2">Tailored Solutions</h3>
           <p className="text-gray-200 text-sm">
-            Posuere sed eu proin elementum nulla. Sed non blandit auctor
-            consequat sit orci sem.
+            Personalized university lists, SOP/LOR reviews, and strong visa
+            documentation tailored to your destination.
           </p>
         </div>
 
@@ -67,8 +66,8 @@ const Hero = () => {
           <ThumbsUp className="w-8 h-8 mb-4 text-[#0B1F3A]" />
           <h3 className="font-semibold text-lg mb-2">Streamlined Process</h3>
           <p className="text-gray-600 text-sm">
-            Posuere sed eu proin elementum nulla. Sed non blandit auctor
-            consequat sit orci sem.
+            Clear timelines, checklist‑driven paperwork, and mock interviews
+            to keep you prepared at every step.
           </p>
         </div>
       </div>

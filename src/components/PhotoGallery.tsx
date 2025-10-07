@@ -11,8 +11,8 @@ const PhotoGallery: React.FC = () => {
                             EduGlobe's Photo Gallery
                         </h2>
                         <p className="text-gray-600 max-w-3xl">
-                            At nullam leo consectetur euismod enim. Orci donec sapien et semper
-                            fringilla pellentesque in diam mi. Pulvinar ante sed velit ac nibh.
+                            Moments from visa approvals, university acceptances, and student send‑offs.
+                            Explore how EduGlobe supports learners from counseling to takeoff.
                         </p>
                     </div>
 
@@ -25,9 +25,9 @@ const PhotoGallery: React.FC = () => {
 
                 {/* Thumbnails */}
                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/public/student1.jpg" alt="" className="w-full h-full object-cover" /></div>
-                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/public/student2.jpg" alt="" className="w-full h-full object-cover" /></div>
-                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/public/student3.jpg" alt="" className="w-full h-full object-cover" /></div>
+                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/student1.jpg" alt="Student visa success" className="w-full h-full object-cover" /></div>
+                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/student2.jpg" alt="Counseling session" className="w-full h-full object-cover" /></div>
+                    <div className="h-64 sm:h-72 md:h-80 bg-[#A0A0A0]" ><img src="/student3.jpg" alt="University acceptance" className="w-full h-full object-cover" /></div>
                 </div>
             </div>
         </section>
